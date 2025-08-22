@@ -1,0 +1,93 @@
+
+Customer Segmentation Using RFM Analysis
+========================================
+
+Project Requirements:
+---------------------
+- Dataset: Online Retail Dataset (UCI)
+- Analyze customer behavior based on:
+  - Recency: How recently a customer made a purchase
+  - Frequency: How often they made purchases
+  - Monetary: How much money they spent
+- Assign scores to each customer using these three metrics
+- Group similar customers based on their scores
+- Suggest simple marketing ideas for each group
+- Tools & Libraries: Python, Pandas, Seaborn (or Excel)
+- Covered Topics: Feature Engineering | Segmentation Logic | Customer Analytics
+- Bonus: Visualize RFM segments with heatmaps or bar charts
+
+------------------------------------------------------------
+
+What We Did:
+============
+
+Step 1A: Data Exploration
+-------------------------
+- Imported the dataset and checked shape, columns, and sample rows.
+- Verified missing values and dataset information.
+
+Step 1B: Data Cleaning & Outlier Detection
+------------------------------------------
+- Removed missing values (CustomerID, InvoiceNo, Description).
+- Removed negative or cancelled transactions.
+- Created a new feature: TotalPrice = Quantity * UnitPrice.
+- Detected outliers using boxplots.
+- Saved cleaned dataset.
+
+Step 2: Data Summary Report
+---------------------------
+- Created summary table including:
+  * Total Transactions: 392692
+  * Unique Customers: 4338
+  * Unique Products: 3665
+  * Unique Countries: 37
+  * Date Range: 2010-12-01 → 2011-12-09
+  * Avg Quantity per Order: 13.12
+  * Avg Unit Price: 3.13
+  * Avg Total Price per Transaction: 22.63
+  * Max Transaction Value: 168469.6
+
+Step 3: RFM Metrics Calculation
+-------------------------------
+- Defined snapshot date.
+- Calculated Recency, Frequency, and Monetary values for each customer.
+- Example Results (first 10 customers):
+    Customer 12346: Recency=326, Frequency=1, Monetary=77183.60
+    Customer 12347: Recency=2, Frequency=7, Monetary=4310.00
+    ...
+
+Step 4: RFM Segmentation
+------------------------
+- Assigned R, F, M scores (1–5 scale).
+- Concatenated scores into RFM_Score.
+- Created segments like Champions, Loyal Customers, Lost Customers, At Risk, etc.
+- Example Results (first 15 customers):
+    Customer 12347: RFM_Score=555, Segment=Champions
+    Customer 12358: RFM_Score=524, Segment=Loyal Customers
+    Customer 12361: RFM_Score=111, Segment=Lost Customers
+    ...
+
+Step 5: Marketing Strategy by Segment
+-------------------------------------
+- Wrote actionable strategies for each segment:
+  * Champions: Reward them, give early access to new products.
+  * Loyal Customers: Provide loyalty programs, exclusive deals.
+  * At Risk: Send personalized offers to re-engage them.
+  * Lost Customers: Offer strong discounts or win-back campaigns.
+  * Others: Nurture gradually with targeted promotions.
+
+Step 6: Visualization of RFM Segments
+-------------------------------------
+- Created visualizations:
+  * Bar chart: Count of customers per segment.
+  * Summary table: Average RFM values per segment.
+  * Heatmap: Compared Recency, Frequency, and Monetary across segments.
+
+------------------------------------------------------------
+
+Final Notes:
+============
+- All requirements of the project were covered step by step.
+- We successfully performed customer segmentation using RFM Analysis.
+- The analysis provided both business insights and actionable marketing strategies.
+- Bonus visualizations were also included for clearer understanding of segments.
