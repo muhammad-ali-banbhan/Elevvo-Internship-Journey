@@ -1,0 +1,53 @@
+Task 1: Sales Performance Dashboard Using Excel
+
+Objective:
+The goal of this task was to analyze sales data and create a clean, interactive, and insightful dashboard in Excel to track business performance.
+
+Dataset:
+- Superstore Sales Dataset (Kaggle)
+- Data consisted of sales transactions with details about product categories, regions, sales amount, and quantity sold.
+
+Steps Performed:
+1. Data Import:
+   - Imported the dataset into Excel.
+   - Verified column headers, data types, and checked for missing values.
+
+2. Data Cleaning:
+   - Removed duplicates and unnecessary blank rows.
+   - Standardized data formatting (dates, currency, numbers).
+   - Ensured categorical fields (Region, Product Category) were consistent.
+
+3. Data Preparation:
+   - Created calculated columns where necessary (e.g., revenue = sales × quantity).
+   - Organized data into a structured format for pivot analysis.
+
+4. Analysis with Pivot Tables:
+   - Built pivot tables to summarize:
+     • Total revenue
+     • Units sold
+     • Monthly sales trends
+     • Sales by region
+     • Sales by product category
+
+5. Dashboard Creation:
+   - Designed interactive charts for key insights:
+     • Column chart for monthly revenue trend
+     • Pie/Bar charts for region-wise and category-wise performance
+   - Added slicers to filter by region and product category for dynamic exploration.
+
+6. Insights:
+   - Identified monthly sales fluctuations (peaks and dips).
+   - Clear visibility into which regions contributed the most.
+   - Highlighted top-performing product categories.
+   - Prepared data for further analysis (e.g., YoY or MoM comparisons).
+
+Tools Used:
+- Microsoft Excel (Pivot Tables, Charts, Formatting, Slicers)
+
+Key Learning:
+- Strengthened skills in data cleaning and preparation.
+- Improved dashboard design for storytelling with data.
+- Gained hands-on practice in business metrics like revenue and sales trends.
+
+Outcome:
+A professional Excel Sales Dashboard that provides a quick and interactive overview of sales performance, enabling business decision-makers to track revenue, units sold, and trends effectively.
