@@ -1,0 +1,77 @@
+
+# Sales Performance Analysis Project - Summary
+
+## Objective
+The main task was to analyze Walmart sales dataset and extract insights through data cleaning, trend analysis, and forecasting.
+
+---
+## Step 1: Data Loading & Inspection
+- Dataset was loaded into Python using Pandas.
+- Dataset contained multiple columns such as Store, Date, Weekly_Sales, Holiday_Flag, Temperature, Fuel_Price, CPI, and Unemployment.
+- Verified number of rows and columns, checked for missing values and duplicates.
+
+**Result:** Dataset was successfully imported and basic structure was understood.
+
+---
+## Step 2: Data Cleaning
+- Converted the 'Date' column into proper datetime format.
+- Extracted additional features: Month_Num, Year, and Week.
+- Checked for and handled any missing/null values.
+
+**Result:** Clean dataset prepared with new time-based features for analysis.
+
+---
+## Step 3: Sales Trend Over Time
+- Grouped data by Date and aggregated Weekly_Sales.
+- Plotted time series chart to observe fluctuations in sales.
+
+**Result:** Clear pattern observed where sales spiked during November-December (holiday season). July months showed dips.
+
+---
+## Step 4: Holiday vs Non-Holiday Sales
+- Grouped data by Holiday_Flag and compared average Weekly_Sales.
+- Created bar chart for visualization.
+
+**Result:** Holiday weeks showed significantly higher sales compared to normal weeks.
+
+---
+## Step 5: Monthly Sales Aggregation
+- Grouped sales by Month_Num to see average monthly performance.
+- Bar chart created.
+
+**Result:** 
+- Months 11 (November) and 12 (December) recorded peak sales.
+- Months 7 (July) and 8 (August) recorded lowest sales.
+
+---
+## Step 6: Revenue by Store (Regional Proxy)
+- Since product-level data was missing, used Store as proxy for region.
+- Aggregated sales by Store.
+
+**Result:** 
+- Top 3 performing stores were Store 20, Store 4, and Store 14 with sales above 1.18e+08.
+- Lowest performing store was Store 1 with sales around 9.13e+07.
+
+---
+## Step 7: Forecasting (Rolling Mean / Exponential Smoothing)
+- Applied simple moving average and exponential smoothing to forecast future sales trends.
+- Forecast line compared with actual sales.
+
+**Result:**
+- Forecast showed similar seasonal patterns, with predicted spikes around holiday seasons.
+- Trend indicated overall stability with cyclical highs and lows.
+
+---
+## Insights from Visualizations
+- **Blue Line:** Actual Sales – showed real demand spikes and drops.
+- **Orange Line:** Moving Average – smoothed trend showing growth/decline phases.
+- **Red Line:** Forecast – estimated future demand, closely following seasonal patterns.
+
+---
+## Final Notes
+- Dataset size was large enough to capture clear patterns across multiple years.
+- Data cleaning, feature extraction, and trend analysis were crucial steps.
+- Holiday season is the biggest driver of sales, especially November–December.
+- Certain stores consistently outperform others, highlighting regional differences.
+
+This project successfully demonstrated the end-to-end data analysis pipeline: **Data Loading → Cleaning → Feature Engineering → Aggregation → Visualization → Forecasting.**
