@@ -1,0 +1,30 @@
+Project Summary: Power BI Dashboard for Retail Insights
+
+Task:
+The task was to create an interactive Power BI Dashboard using the Superstore Sales dataset. 
+The dashboard should provide key insights into retail performance by visualizing sales, profit, and customer behavior trends.
+
+Steps Taken:
+1. Imported and cleaned the Superstore dataset in Power BI.
+2. Performed data modeling to ensure relationships between tables were properly set.
+3. Created KPIs and measures for Sales, Profit, and Orders.
+4. Built multiple visualizations to showcase business insights.
+
+Charts Created:
+- Sales by Category → Clustered Column Chart
+- Sales by Sub-Category → Clustered Column Chart
+- Monthly Sales by Year-over-Year (YoY) → Stacked Area Chart
+- Monthly Profit by Year-over-Year (YoY) → Stacked Area Chart
+- Top 5 Regions by Sales → Bar Chart
+- Top 10 Products by Sales → Bar Chart
+- Sales and Profit by Segment → Donut Chart
+- Sales and Profit by Region → Map Chart
+
+Additional Features:
+- Added a Slicer for filtering based on Segment and Region.
+- Dashboard theme and formatting applied for professional look.
+- Final dashboard provides actionable insights for decision making.
+
+Outcome:
+The dashboard allows users to interactively explore sales and profit data across categories, sub-categories, regions, and segments. 
+It highlights top-performing products, regions, and trends, enabling better retail strategy and performance tracking.
